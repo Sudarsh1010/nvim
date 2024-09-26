@@ -45,6 +45,8 @@ keymap.set("n", "te", ":tabedit<Return>", opts)
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
+keymap.set("v", "<leader>y", '"+y', opts)
+
 -- package-info keymaps
 set_keymap(
   "n",
