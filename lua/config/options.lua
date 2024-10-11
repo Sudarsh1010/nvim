@@ -8,6 +8,13 @@ opt.conceallevel = 1
 opt.cmdheight = 0
 opt.clipboard = "unnamedplus"
 opt.relativenumber = false
+opt.termguicolors = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.scrolloff = 15
+
+opt.list = true
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- LSP Server to use for Python.
 vim.g.lazyvim_python_lsp = "pyright"
