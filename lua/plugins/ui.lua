@@ -59,19 +59,7 @@ return {
             filename = "[*]" .. filename
           end
 
-          local lackluster = require("lackluster")
-          local icon, color = require("nvim-web-devicons")
-            .setup({
-              color_icons = false,
-              override = {
-                ["default_icon"] = {
-                  color = lackluster.color.gray4,
-                  name = "Default",
-                },
-              },
-            })
-            .get_icon_color(filename)
-
+          local icon, color = require("nvim-web-devicons").get_icon_color(filename)
           return { { icon, guifg = color }, { " " }, { filename } }
         end,
       })
